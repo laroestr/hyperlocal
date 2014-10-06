@@ -45,6 +45,7 @@ and Blueprint http://www.blueprintcss.org/
 	12.2 Galleries
 --------------------------------------------------------------*/
 
+@import url(css/fonts.css);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic,600italic);
 
 /*--------------------------------------------------------------
@@ -792,4 +793,11 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+/*--------------------------------------------------------------
+13 Custom
+--------------------------------------------------------------*/
+#masthead .site-title h1 {
+	font-size: 30px;
+	font-weight: bold;
 }
