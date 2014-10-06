@@ -103,23 +103,23 @@ function hyperlocal_entry_footer() {
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( __( ', ', 'hyperlocal' ) );
 		if ( $categories_list && hyperlocal_categorized_blog() ) {
-			printf( '<span class="cat-links">' . __( 'Posted in %1$s', 'hyperlocal' ) . '</span>', $categories_list );
+			printf( '<span class="cat-links">' . __( 'Kategorie: %1$s', 'hyperlocal' ) . '</span>', $categories_list );
 		}
 
 		/* translators: used between list items, there is a space after the comma */
 		$tags_list = get_the_tag_list( '', __( ', ', 'hyperlocal' ) );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . __( 'Tagged %1$s', 'hyperlocal' ) . '</span>', $tags_list );
+			printf( '<span class="tags-links">' . __( 'Schlagworte: %1$s', 'hyperlocal' ) . '</span>', $tags_list );
 		}
 	}
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 		echo '<span class="comments-link">';
-		comments_popup_link( __( 'Leave a comment', 'hyperlocal' ), __( '1 Comment', 'hyperlocal' ), __( '% Comments', 'hyperlocal' ) );
+		comments_popup_link( __( 'Kommentieren', 'hyperlocal' ), __( '1 Kommentar', 'hyperlocal' ), __( '% Kommentare', 'hyperlocal' ) );
 		echo '</span>';
 	}
 
-	edit_post_link( __( 'Edit', 'hyperlocal' ), '<span class="edit-link">', '</span>' );
+	edit_post_link( __( 'Bearbeiten', 'hyperlocal' ), '<span class="edit-link">', '</span>' );
 }
 endif;
 
